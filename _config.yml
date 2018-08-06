@@ -5,10 +5,10 @@
 # Site
 title: MoBenw
 subtitle:
-description:
+description: 一只前往大佬路上的萌新
 keywords:
 author: MoBenw
-language:
+language: zh-Hans
 timezone:
 
 # URL
@@ -80,3 +80,5 @@ theme: hexo-theme-next
 deploy:
   type: git
   repo: git@github.com:MoBenw/MoBenw.github.io.git
+
+
