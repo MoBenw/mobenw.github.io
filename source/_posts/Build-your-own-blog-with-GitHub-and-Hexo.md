@@ -40,7 +40,7 @@ description: 博客是个好东西啊 第一次来体验一番由自己搭建的
       npm install hexo-deployer-git  --save
 
 #### 初始化 Hexo
-选择你博客存放的位置
+选择你博客存放的位置 (建议创建一个新的文件夹_初始化需要一个空的文件夹)
 然后命令行输入命令
 
     hexo init
