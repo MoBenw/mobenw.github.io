@@ -3,7 +3,7 @@ title: 记一次suda框架之宿舍管理系统
 date: 2018-08-12 22:47:36
 categories: Suda框架学习
 tags:
- - suda
+ - Suda
 description: 简直不敢相信，我居然能为大佬提供帮助
 photos:
  - "2018/08/12/Suda-apartment-management-system/0.png"

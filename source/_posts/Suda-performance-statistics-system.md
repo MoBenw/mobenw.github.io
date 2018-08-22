@@ -3,7 +3,7 @@ title: 记一次suda框架之简单成绩系统
 date: 2018-08-10 23:05:13
 categories: Suda框架学习
 tags: 
- - suda
+ - Suda
 description: 正在学习会长的suda框架，努力成为一个优秀的开发狗 
 photos:
  - "2018/08/10/Suda-performance-statistics-system/0.png"
