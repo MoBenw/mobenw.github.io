@@ -81,4 +81,11 @@ deploy:
   type: git
   repo: git@github.com:MoBenw/MoBenw.github.io.git
 
+# algolia 搜索
+algolia:
+  applicationID: 0WGKTU8P2U
+  apiKey: 3a7db1e65976d82c8bb18e2853de726e
+  adminApiKey: c83bf6fc4a02a51f4c23e4b4d023bb75
+  indexName: mobenw
+  chunkSize: 5000
 
