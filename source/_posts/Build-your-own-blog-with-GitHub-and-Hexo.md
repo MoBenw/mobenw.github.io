@@ -3,7 +3,7 @@ title: 使用GitHub和Hexo搭建自己的博客
 date: 2018-08-06 16:31:21
 categories: 博客搭建
 tags:
- - 新技能
+ - 安装与配置
  - Hexo
  - NexT
 description: 博客是个好东西啊 第一次来体验一番由自己搭建的一个博客 有点简陋别笑 关于没有图片 是因为还没有还找到合适的图床

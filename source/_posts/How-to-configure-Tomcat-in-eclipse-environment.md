@@ -7,8 +7,8 @@ tags:
  - Java
  - Eclipse
  - Java EE
- - 新技能
-description: myeclipse是一个好东西，但是pro只给三十天的免费时间，有点头疼。有听说破解容易翻车，头又在隐隐作痛。老牌的eclipse说实在的 还是挺好用的
+ - 安装与配置
+description: myeclipse是一个好东西，但是pro只给三十天的免费时间，有点头疼。又听说破解容易翻车，头又在隐隐作痛。老牌的eclipse说实在的 还是挺好用的
 photos: "https://i.loli.net/2018/08/20/5b7a605658f8b.jpg"
 ---
 
