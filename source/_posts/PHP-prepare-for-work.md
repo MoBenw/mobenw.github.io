@@ -8,7 +8,7 @@ tags:
  - vscode
  - 安装与配置
 description: 在开始语言学习之前 我们有必要的了解一下自己所需要的工具是什么
-photos: 2018/09/04/Prepare-for-work/0.jpg
+photos: 2018/09/04/PHP-prepare-for-work/0.jpg
 ---
 
 ### 使用软件
@@ -60,18 +60,18 @@ emmmm 能打开就差不多了
 2.切换版本至最新版本 (方便之后的框架学习，框架使用到了7.2的新特征)
 
 
-![1](Prepare-for-work/1.png)
+![1](PHP-prepare-for-work/1.png)
 
 3.进入你的网站根目录
 
-![2](Prepare-for-work/2.png)
+![2](PHP-prepare-for-work/2.png)
 
-![3](Prepare-for-work/3.png)
+![3](PHP-prepare-for-work/3.png)
 
 4.创建一个名为 `hello.txt`的文本文档，并将其后缀改为`.php`
 
-![4](Prepare-for-work/4.png)
-![5](Prepare-for-work/5.png)
+![4](PHP-prepare-for-work/4.png)
+![5](PHP-prepare-for-work/5.png)
 
 5.用vscode打开 `hello.php` 文件，并编辑下列内容
 
@@ -88,11 +88,11 @@ echo "Hello World!";
 </html>
 ```
 
-![6](Prepare-for-work/6.png)
+![6](PHP-prepare-for-work/6.png)
 
 6.保存编辑后，打开浏览器，在地址栏输入 `http://localhost/hello.php` 
 
-![7](Prepare-for-work/7.png)
+![7](PHP-prepare-for-work/7.png)
 
 
 按照这样的步骤 你的 `'helloworld'` 就出来了
