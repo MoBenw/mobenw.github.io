@@ -6,7 +6,7 @@ tags:
  - Suda
 description: 我...我在干啥...我为啥要听信他们来做这个啊
 photos:
- - "2018/08/12/Suda-confession-wall/0.gif"
+ - "2018/08/12/Suda-confession-wall/0.png"
 ---
 
 表白墙设计...大概需要这些功能吧
