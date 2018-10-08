@@ -144,3 +144,7 @@ Ctrl+F11 ok 打开了内置的浏览器 运行成功
 
 改
 ![18](How-to-configure-Tomcat-in-eclipse-environment/18.png)
+
+### 附件
+
+[Tomact 32-bit/64-bit Windows Service Installer](http://mirrors.tuna.tsinghua.edu.cn/apache/tomcat/tomcat-9/v9.0.12/bin/apache-tomcat-9.0.12.exe)

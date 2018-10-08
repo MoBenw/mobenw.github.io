@@ -1,7 +1,7 @@
 ---
 title: 或许你的手机上需要一个linux
 date: 2018-08-09 22:41:16
-categories: 
+categories: 安装新东西
 tags:
  - 安装与配置
  - 小配件
