@@ -79,7 +79,9 @@ theme: next
 ## Docs: https://hexo.io/docs/deployment.html
 deploy:
   type: git
-  repo: git@github.com:MoBenw/MoBenw.github.io.git
+  repo: 
+    aliyun: git@47.106.227.142:/home/git/hexo.git
+    github: git@github.com:MoBenw/mobenw.github.io.git
 
 # algolia 搜索
 algolia:

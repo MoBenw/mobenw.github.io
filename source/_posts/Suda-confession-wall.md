@@ -4,6 +4,7 @@ date: 2018-08-12 22:47:37
 categories: Suda框架学习
 tags:
  - Suda
+ - PHP
 description: 我...我在干啥...我为啥要听信他们来做这个啊
 photos:
  - "2018/08/12/Suda-confession-wall/0.png"

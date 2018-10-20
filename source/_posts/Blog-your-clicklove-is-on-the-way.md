@@ -1,11 +1,12 @@
 ---
 title: 你的clicklove小爱心正在路上
 date: 2018-08-07 21:18:19
-categories: 博客搭建
+categories: Hexo博客搭建
 tags: 
  - 安装与配置
  - Hexo
  - NexT
+ - JavaScript
 description: 生活可能需要点乐趣
 ---
 

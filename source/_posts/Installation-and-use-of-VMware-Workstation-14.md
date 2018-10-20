@@ -37,6 +37,11 @@ photos: 2018/10/08/Installation-and-use-of-VMware-Workstation-14/0.png
 
 [这是**rhel**的**Vmware Tools** 的**安装教程**链接](https://jingyan.baidu.com/article/2d5afd699108d985a2e28e35.html)
 
+#### 解压版 ####
+
+本来安排了解压版的，但是考虑到，会有一些版本问题，这里就不放上了
+
+
 对于大部分电脑来说
 
 完成这些步骤基本上就可以运行了
