@@ -14,15 +14,20 @@ photos:
 
 ### 创建一个 `git` 用户 专门运行 `git` 服务
 
-`$ sudo adduser git`
+```Bash
+$ sudo adduser git
+```
 为了安全
 
 ### ssh 连接配对
 
-`$ ssh-keygen`
+```Bash
+$ ssh-keygen
+```
 创建公钥私钥对
-
-`$ ssh-copy-id -i .ssh/id_rsa.pub  用户名字@192.168.x.xxx`
+```Bash
+$ ssh-copy-id -i .ssh/id_rsa.pub  用户名字@192.168.x.xxx
+```
 将公钥复制到远程机器中
 
 
@@ -43,12 +48,15 @@ $ git init --bare
 使用 --bare 参数，Git 就会创建一个裸仓库，为共享而存在
 
 ### 编写脚本
-
+```Bash
 `$ cd /home/git/hexo.git/hooks`
-
-`$ vim post-receive`
-
 ```
+
+```Bash
+`$ vim post-receive`
+```
+
+```Bash
 #!/bin/sh
 git --work-tree=/www/wwwroot/www.mobenw.cn --git-dir=/home/git/hexo.git checkout -f
 ```
@@ -58,11 +66,13 @@ git --work-tree=/www/wwwroot/www.mobenw.cn --git-dir=/home/git/hexo.git checkout
 以上操作实现了自动部署的功能
 
 ### 提权
-
-`$ chmod +x post-receive`
+```Bash
+$ chmod +x post-receive
 为这个文件提权
-
-`$ sudo chown -R git:git hexo.git`
+```
+```Bash
+$ sudo chown -R git:git hexo.git
+```
 使`hexo.blog`该目录的拥有者为 `git`
 
 `$ chmod 777 -R /www/wwwroot/www.mobenw.cn`
@@ -71,7 +81,7 @@ git --work-tree=/www/wwwroot/www.mobenw.cn --git-dir=/home/git/hexo.git checkout
 ### 本地配置
 本地`hexo`目录下的
 **`_config.yml`**
-```
+```yml
 deploy:
   type: git
   repo: 

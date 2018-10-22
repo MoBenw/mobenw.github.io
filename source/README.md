@@ -23,3 +23,8 @@ npm install gulp-minify-css gulp-uglify gulp-htmlmin gulp-htmlclean gulp --save
 ## 上传本地图片插件
 
 `npm install hexo-asset-image --save`
+
+## 站内搜索功能
+
+local_search
+`npm install hexo-generator-searchdb --save`
