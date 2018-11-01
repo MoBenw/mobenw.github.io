@@ -10,6 +10,9 @@ photos: 2018/10/08/Installation-and-use-of-VMware-Workstation-14/0.png
 
 既然前人们都造了轮子，而且轮子还很好用，那么我就直接借鉴整合下需要的。
 
+ps.首先安装虚拟机-> 然后使用注册机激活 -> 创建虚拟机并添加镜像文件 -> 开启此虚拟机进行安装
+
+### 虚拟机
 #### VMware Workstation 14 Pro ####
 
 [这是 **VMware 14 pro** 的**下载**链接](https://pan.baidu.com/s/1qtteEBv2cG2IebEQbhv6vw)
@@ -17,6 +20,7 @@ photos: 2018/10/08/Installation-and-use-of-VMware-Workstation-14/0.png
 
 [这是 **VMware 14 pro** 的**安装教程**链接](https://jingyan.baidu.com/article/9f7e7ec09da5906f281554d6.html)
 
+### 镜像文件
 #### Ubuntu ####
 
 [这是 **Ubuntu 18.04.1 LTS** 的**下载**链接](http://releases.ubuntu.com/18.04.1/ubuntu-18.04.1-desktop-amd64.iso?_ga=2.4398515.1687263706.1538976384-1150378252.1531223957)
