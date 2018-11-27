@@ -8,7 +8,7 @@ tags:
  - basic
  - 安装与配置
 description: 是时候学一点基础语法了
-photos: 2018/11/01/PHP-basic-grammar/0.jpg
+photos: https://i.loli.net/2018/11/27/5bfd46ec4d56b.jpg
 ---
 
 
@@ -23,7 +23,7 @@ photos: 2018/11/01/PHP-basic-grammar/0.jpg
 
 ### 开始于结束标记
 php 有四种开始结束标记 ，这里不讲，仅做了解
-![2.1](PHP-basic-grammar/2.1.png)
+![2.1.png](https://i.loli.net/2018/11/27/5bfd589c04c59.png)
 
 在一个 PHP 代码段中的最后一行可以不用分号结束
 我们一般使用的是第一种形式
@@ -33,7 +33,7 @@ php 有四种开始结束标记 ，这里不讲，仅做了解
  - `//`
  - `/*  */`
  - `#`
-![2.2](PHP-basic-grammar/2.2.png)
+![2.2.png](https://i.loli.net/2018/11/27/5bfd589c8403a.png)
 
 ### 变量
 

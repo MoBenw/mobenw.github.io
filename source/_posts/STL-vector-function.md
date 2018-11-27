@@ -7,8 +7,7 @@ tags:
  - STL
  - Vector
 description: 就让vector函数引领你进入STL的世界吧
-photos: 
- - "2018/08/13/STL-vector-function/0.gif"
+photos: https://i.loli.net/2018/11/27/5bfd4adeed576.gif
 ---
 
 <div hidden="hidden">感谢百度各位大佬的指点

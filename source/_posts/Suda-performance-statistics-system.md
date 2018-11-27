@@ -5,8 +5,7 @@ categories: Suda框架学习
 tags: 
  - Suda
 description: 正在学习会长的suda框架，努力成为一个优秀的开发狗 
-photos:
- - "2018/08/10/Suda-performance-statistics-system/0.png"
+photos: https://i.loli.net/2018/11/27/5bfd54fa49268.png
 ---
 <!-- ![开发狗](Suda-performance-statistics-system/0.png)正在学习会长的suda框架，努力成为一个优秀的开发狗 -->
 <!--more-->
@@ -37,7 +36,7 @@ photos:
 目录结构
 
 
-![123](Suda-performance-statistics-system/1.png)
+![1](https://i.loli.net/2018/11/27/5bfd551fb784f.png)
 
 ps.为啥这里我不适用那个高逼格的制表符 是因为没用过 不会用...
 
@@ -182,13 +181,13 @@ class StatisticTable extends \suda\archive\Table {
 
 #### **index.tpl.html**
 你可能需要一个index 
-![index界面](Suda-performance-statistics-system/2.png)
+![2](https://i.loli.net/2018/11/27/5bfd5536b2fdb.png)
 
 这个界面可以自己制作
 一个`<table>`
 需要注意的地方就是 url的生成方式
 
-![注意点](Suda-performance-statistics-system/3.png)
+![3](https://i.loli.net/2018/11/27/5bfd554589279.png)
 
 也可以参考我的
 
@@ -577,7 +576,7 @@ class DownloadResponse extends \suda\core\Response
 
 使用密码验证时需要设置密码
 
-![配置密码](Suda-performance-statistics-system/4.png)
+![4](https://i.loli.net/2018/11/27/5bfd55581794c.png)
 
 你所需要的下载姿势是
 `./dev.php/table_id_1/download?password=密码`
@@ -606,8 +605,7 @@ class DownloadResponse extends \suda\core\Response
 - 密码提示
 - 当前输入密码
 
-![大体图](Suda-performance-statistics-system/5.png)
-
+![5](https://i.loli.net/2018/11/27/5bfd5565a4b11.png)
 #### **download.tpl.html**
 
 ```html

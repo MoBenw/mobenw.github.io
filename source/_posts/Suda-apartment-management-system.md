@@ -6,8 +6,7 @@ tags:
  - Suda
  - PHP
 description: 简直不敢相信，我居然能为大佬提供帮助
-photos:
- - "2018/08/12/Suda-apartment-management-system/0.png"
+photos: https://i.loli.net/2018/11/27/5bfd4b12e5efc.png
 ---
 
 ### 宿舍管理系统
@@ -33,20 +32,21 @@ photos:
 **用户中心的模块**
 >support, user-center-server
 
-![1](Suda-apartment-management-system/1.png)
+![1.png](https://i.loli.net/2018/11/27/5bfd56929a0b0.png)
+
 
 **宿舍系统的模块**
 >support,user-center-client,apartment
 
-![1.2](Suda-apartment-management-system/1.2.png)
+![1.2.png](https://i.loli.net/2018/11/27/5bfd568591361.png)
 
 ### 数据库分类
 为什么分类呢 方便管理
 **修改用户中心的数据库 库名看自己**
-![1.2](Suda-apartment-management-system/10.png)
+![10.png](https://i.loli.net/2018/11/27/5bfd56c529336.png)
 
 **修改宿舍系统的数据库 库名看自己**
-![1.2](Suda-apartment-management-system/11.png)
+![11.png](https://i.loli.net/2018/11/27/5bfd56c566948.png)
 
 ### 进入用户中心
 
@@ -59,22 +59,23 @@ photos:
 -u root -p root
 -u dxkite -p dxkite
 两个都可以
-![1.2](Suda-apartment-management-system/8.png)
-![1.2](Suda-apartment-management-system/9.png)
+![8.png](https://i.loli.net/2018/11/27/5bfd569383153.png)
+![9.png](https://i.loli.net/2018/11/27/5bfd569384d09.png)
 
 添加网站的一系列操作 把宿舍选择的那个网站添加进来
 
-![1.2](Suda-apartment-management-system/3.png)
+![3.png](https://i.loli.net/2018/11/27/5bfd56937b2cb.png)
 
 这个东西呢 在宿舍系统中可以看到 (最新mod)
 ```
 http://选宿舍的网址/dev.php/oauth-client/callback
 http://选宿舍的网址/dev.php/api/oauth/user-client
 ```
-![1.2](Suda-apartment-management-system/4.png)
-![1.2](Suda-apartment-management-system/5.png)
-![1.2](Suda-apartment-management-system/6.png)
-![1.2](Suda-apartment-management-system/7.png)
+![4.png](https://i.loli.net/2018/11/27/5bfd56937d398.png)
+![5.png](https://i.loli.net/2018/11/27/5bfd56937744c.png)
+![6.png](https://i.loli.net/2018/11/27/5bfd56937f0b2.png)
+![7.png](https://i.loli.net/2018/11/27/5bfd569380f91.png)
+
 
 
 ### 进入宿舍系统
@@ -82,12 +83,12 @@ http://选宿舍的网址/dev.php/api/oauth/user-client
 `http://选宿舍的网址/dev.php/setting`
 
 
-![1.2](Suda-apartment-management-system/12.png)
+![12.png](https://i.loli.net/2018/11/27/5bfd56c54876c.png)
 
 在最新mod中  这里会显示 回调地址 和API接口
 
 修改信息，内容来自之前用户中心`网站信息` 注意点击修改
-![1.2](Suda-apartment-management-system/13.png)
+![13.png](https://i.loli.net/2018/11/27/5bfd56c568c45.png)
 
 以上为这个的基本配置
 

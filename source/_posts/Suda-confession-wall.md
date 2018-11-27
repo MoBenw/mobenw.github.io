@@ -6,8 +6,7 @@ tags:
  - Suda
  - PHP
 description: 我...我在干啥...我为啥要听信他们来做这个啊
-photos:
- - "2018/08/12/Suda-confession-wall/0.png"
+photos: https://i.loli.net/2018/11/27/5bfd54b5b7f8f.png
 ---
 
 表白墙设计...大概需要这些功能吧
@@ -27,24 +26,24 @@ photos:
 ### 安装模块
 
 1. 预览一下
-![1](Suda-confession-wall/1.png)
+![1](https://i.loli.net/2018/11/27/5bfd5584ef5a0.png)
 
 2. `app/mainifast.yml` 原 `app/mainifast.json` 
 >1. 为你的app改个好听的name
 >2. 配置好启动的模块
 >3. 使用`.yml`文件时需要将下载的`vendor` 添加至`app`中
 
-![2](Suda-confession-wall/2.png)
+![Uploading 2.png… (7ef9sfmnq)]()
 
 3. `config.json` 可以考虑修改一下数据库
-![3](Suda-confession-wall/3.png)
+![3](https://i.loli.net/2018/11/27/5bfd559e29e4c.png)
 
 
 4. `modules` 把你的`share`和`import`弄好
-![4](Suda-confession-wall/4.png)
+![4](https://i.loli.net/2018/11/27/5bfd55c1d3287.png)
 
 5. `router.json`
-![5](Suda-confession-wall/5.png)
+![5](https://i.loli.net/2018/11/27/5bfd55c88c30f.png)
 
 ### 基本配置&&发布表白
 
@@ -467,7 +466,7 @@ confession-wall:
     edit: 编辑表白
     delete: 删除表白
 ```
-![5](Suda-confession-wall/5.png)
+![6](https://i.loli.net/2018/11/27/5bfd5621bd6c1.png)
 
 ##### api
 
@@ -589,7 +588,7 @@ public function delete(int $id):bool {
 
 ### 评论功能
 1. 预览一下
-![7](Suda-confession-wall/7.png)
+![7](https://i.loli.net/2018/11/27/5bfd5634771d6.png)
 
 2. `module.json` 注意写一下
 
@@ -985,7 +984,7 @@ v1.0:
 
 ### 附件功能
 1. 预览一下
-![8](Suda-confession-wall/8.png)
+![8](https://i.loli.net/2018/11/27/5bfd5647ceebb.png)
 
 2. `module.json` 注意写一下
 

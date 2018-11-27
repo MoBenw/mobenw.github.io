@@ -8,7 +8,7 @@ tags:
  - basic
  - 安装与配置
 description: 表单~~
-photos: 2018/11/14/PHP-form/0.jpg
+photos: https://i.loli.net/2018/11/27/5bfd46c1da55b.jpg
 ---
 
 我们简单的来讲讲表单

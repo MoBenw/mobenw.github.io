@@ -5,7 +5,7 @@ categories: 安装新东西
 tags:
  - 安装与配置
 description: 我们不生产轮子 我们是大自然的搬运工
-photos: 2018/10/08/Installation-and-use-of-VMware-Workstation-14/0.png
+photos: https://i.loli.net/2018/11/27/5bfd4ab28499b.png
 ---
 
 既然前人们都造了轮子，而且轮子还很好用，那么我就直接借鉴整合下需要的。

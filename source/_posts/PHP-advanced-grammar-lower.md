@@ -8,7 +8,7 @@ tags:
  - basic
  - 安装与配置
 description: 继续我们的挑战
-photos: 2018/11/13/PHP-advanced-grammar-lower/0.jpg
+photos: https://i.loli.net/2018/11/27/5bfd471a1250d.jpg
 ---
 
 这一节我们来讲类

@@ -30,17 +30,18 @@ Tomcat 无太大操作空间 可以直接一路默认
 真的默认 无
 
 #### Eclipse安装图解
-![0.8](How-to-configure-Tomcat-in-eclipse-environment/0.8.png)
-![0.9](How-to-configure-Tomcat-in-eclipse-environment/0.9.png)
+![0.8.png](https://i.loli.net/2018/11/27/5bfd5a1fcadf0.png)
+![0.9.png](https://i.loli.net/2018/11/27/5bfd5a1a6bf72.png)
 
 #### Tomcat安装图解
-![0.1](How-to-configure-Tomcat-in-eclipse-environment/0.1.png)
-![0.2](How-to-configure-Tomcat-in-eclipse-environment/0.2.png)
-![0.3](How-to-configure-Tomcat-in-eclipse-environment/0.3.png)
-![0.4](How-to-configure-Tomcat-in-eclipse-environment/0.4.png)
-![0.5](How-to-configure-Tomcat-in-eclipse-environment/0.5.png)
-![0.6](How-to-configure-Tomcat-in-eclipse-environment/0.6.png)
-![0.7](How-to-configure-Tomcat-in-eclipse-environment/0.7.png)
+![0.1.png](https://i.loli.net/2018/11/27/5bfd5a2cc2637.png)
+![0.2.png](https://i.loli.net/2018/11/27/5bfd5b6e534c0.png)
+![0.3.png](https://i.loli.net/2018/11/27/5bfd5a6836384.png)
+![0.4.png](https://i.loli.net/2018/11/27/5bfd5a2d4c0de.png)
+![0.5.png](https://i.loli.net/2018/11/27/5bfd5a2d4d531.png)
+![0.6.png](https://i.loli.net/2018/11/27/5bfd5a2d4eaee.png)
+![0.7.png](https://i.loli.net/2018/11/27/5bfd5a68d200f.png)
+
 
 
 ### 配置
@@ -54,19 +55,19 @@ Add你的Tomcat
 选择你的版本
 >我的版本是v9.0
 
-![1](How-to-configure-Tomcat-in-eclipse-environment/1.png)
-![2](How-to-configure-Tomcat-in-eclipse-environment/2.png)
+![1.png](https://i.loli.net/2018/11/27/5bfd59abd8af7.png)
+![2.png](https://i.loli.net/2018/11/27/5bfd59a13da69.png)
 
 Next
 
 选择你的安装路径
 
-![3](How-to-configure-Tomcat-in-eclipse-environment/3.png)
+![3.png](https://i.loli.net/2018/11/27/5bfd59b0b37e1.png)
 
 #### 选择jdk版本
 
 
-![4](How-to-configure-Tomcat-in-eclipse-environment/4.png)
+![4.png](https://i.loli.net/2018/11/27/5bfd59b0aef41.png)
 
 一般情况下 这个是系统默认的 这里为了一些后续方便
 >Workbench default JRE
@@ -76,7 +77,7 @@ Add你的jdk
 
 选择你的安装路径
 
-![5](How-to-configure-Tomcat-in-eclipse-environment/5.png)
+![5.png](https://i.loli.net/2018/11/27/5bfd59b0b0d8c.png)
 
 ok 搞定
 
@@ -84,37 +85,37 @@ ok 搞定
 新建项目
 **File** --> **New** --> **Other** --> **web** -->**Dynamic Web Project**
 
-![6](How-to-configure-Tomcat-in-eclipse-environment/6.png)
+![6.png](https://i.loli.net/2018/11/27/5bfd5a28cf817.png))
 
 设置项目名
 
-![7](How-to-configure-Tomcat-in-eclipse-environment/7.png)
+![7.png](https://i.loli.net/2018/11/27/5bfd5a26914aa.png)
 
 这里可以不用管
-![8](How-to-configure-Tomcat-in-eclipse-environment/8.png)
+![8.png](https://i.loli.net/2018/11/27/5bfd5a2743a62.png)
 
 这个时候我们需要看到我们的server
-![9](How-to-configure-Tomcat-in-eclipse-environment/9.png)
-![10](How-to-configure-Tomcat-in-eclipse-environment/10.png)
+![9.png](https://i.loli.net/2018/11/27/5bfd5a28d927b.png)
+![10.png](https://i.loli.net/2018/11/27/5bfd5a28da20a.png)
 
 
 #### 部署server
 
-![11](How-to-configure-Tomcat-in-eclipse-environment/11.png)
+![11.png](https://i.loli.net/2018/11/27/5bfd5a28d3dde.png)
 
 将之前创建的Test项目add到 server
-![12](How-to-configure-Tomcat-in-eclipse-environment/12.png)
-![13](How-to-configure-Tomcat-in-eclipse-environment/13.png)
+![12.png](https://i.loli.net/2018/11/27/5bfd59cbd3737.png)
+![13.png](https://i.loli.net/2018/11/27/5bfd59cc58619.png)
 
 启动 server
 可以右键 也可以直接点击这个绿色启动键
-![14](How-to-configure-Tomcat-in-eclipse-environment/14.png)
+![14.png](https://i.loli.net/2018/11/27/5bfd59cc64102.png)
 
 
 #### 设置主界面index
 **Test** --> **Webcontent (之前自己设置的，这是默认的)** --> `index.jsp`
 
-![15](How-to-configure-Tomcat-in-eclipse-environment/15.png)
+![15.png](https://i.loli.net/2018/11/27/5bfd59c0032be.png)
 
 ```jsp
 <!DOCTYPE HTML PUBLIC "-//W3C//DTD HTML 4.01 Transitional//EN">
@@ -134,16 +135,16 @@ Ctrl+F11 ok 打开了内置的浏览器 运行成功
 或者手动打开浏览器
 `http://localhost:8080/Test/`
 
-![16](How-to-configure-Tomcat-in-eclipse-environment/16.png)
+![16.png](https://i.loli.net/2018/11/27/5bfd59b523b88.png)
 
 #### Others
 这里也可以修改path设置成Tomcat的目录 (了解一下)
 
 原
-![17](How-to-configure-Tomcat-in-eclipse-environment/17.png)
+![17.png](https://i.loli.net/2018/11/27/5bfd59c000be5.png)
 
 改
-![18](How-to-configure-Tomcat-in-eclipse-environment/18.png)
+![18.png](https://i.loli.net/2018/11/27/5bfd59bc022b7.png)
 
 ### 附件
 

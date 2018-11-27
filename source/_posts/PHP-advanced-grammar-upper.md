@@ -8,7 +8,7 @@ tags:
  - basic
  - 安装与配置
 description: 是时候给自己来点挑战了
-photos: 2018/11/08/PHP-advanced-grammar-upper/0.jpg
+photos: https://i.loli.net/2018/11/27/5bfd47018f9a8.jpg
 ---
 
 回复一下上次碰到的问题：
