@@ -6,6 +6,7 @@ categories:
 tags:
  - pojie
  - 小配件
+ - 安装与配置
 description: 别再为水印和弹窗烦恼了
 photos: https://i.loli.net/2018/12/12/5c1128dfed59f.png
 ---

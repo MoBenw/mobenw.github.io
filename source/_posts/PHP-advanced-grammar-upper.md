@@ -6,7 +6,6 @@ categories:
 tags:
  - PHP
  - basic
- - 安装与配置
 description: 是时候给自己来点挑战了
 photos: https://i.loli.net/2018/11/27/5bfd47018f9a8.jpg
 ---

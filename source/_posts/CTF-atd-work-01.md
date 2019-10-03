@@ -6,7 +6,7 @@ tags:
  - ctf
  - web
 description: 第一次练习
-photos: 
+photos: https://i.loli.net/2019/01/08/5c33943a18eb8.jpg
 ---
 
 ## Web1

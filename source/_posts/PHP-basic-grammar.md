@@ -6,7 +6,6 @@ categories:
 tags:
  - PHP
  - basic
- - 安装与配置
 description: 是时候学一点基础语法了
 photos: https://i.loli.net/2018/11/27/5bfd46ec4d56b.jpg
 ---

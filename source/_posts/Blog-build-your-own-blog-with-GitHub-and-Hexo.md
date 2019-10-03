@@ -1,7 +1,9 @@
 ---
 title: 使用GitHub和Hexo搭建自己的博客
 date: 2018-08-06 16:31:21
-categories: Hexo博客搭建
+categories:
+ - Hexo博客搭建
+ - 安装新东西
 tags:
  - 安装与配置
  - Hexo
