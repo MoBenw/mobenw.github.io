@@ -1,6 +1,23 @@
 # MoBenw.github.io
 我的博客
 
+## 个人使用
+
+### 本地浏览使用
+
+`hexo g && hexo s`
+
+>hexo g 生成
+>hexo s 启动服务预览
+
+### 部署到GitHub
+
+`hexo clean && hexo g && hexo d`
+
+>hexo clean 清理缓存
+>hexo g 生成
+>hexo d 部署
+
 # 使用到的插件及指令
 
 ## 安装Hexo
