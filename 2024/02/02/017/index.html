@@ -16,21 +16,20 @@
   <meta name="author" content="mobenw">
   <meta name="keywords" content="">
   
-    <meta name="description" content="如何优雅的使用vscode编写stm32代码">
+    <meta name="description" content="总要经历一下重装系统把">
 <meta property="og:type" content="article">
-<meta property="og:title" content="Vscode之STM32环境搭建">
-<meta property="og:url" content="http://example.com/2022/08/09/015/index.html">
+<meta property="og:title" content="重装必备软件">
+<meta property="og:url" content="http://example.com/2024/02/02/017/index.html">
 <meta property="og:site_name" content="Mobenw">
-<meta property="og:description" content="如何优雅的使用vscode编写stm32代码">
+<meta property="og:description" content="总要经历一下重装系统把">
 <meta property="og:locale" content="zh_CN">
-<meta property="article:published_time" content="2022-08-09T10:10:50.000Z">
-<meta property="article:modified_time" content="2024-02-01T07:40:29.836Z">
+<meta property="article:published_time" content="2024-02-02T07:01:57.000Z">
+<meta property="article:modified_time" content="2024-02-02T07:13:24.259Z">
 <meta property="article:author" content="mobenw">
-<meta property="article:tag" content="STM32">
 <meta name="twitter:card" content="summary_large_image">
   
   
-  <title>Vscode之STM32环境搭建 - Mobenw</title>
+  <title>重装必备软件 - Mobenw</title>
 
   <link  rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap@4/dist/css/bootstrap.min.css" />
 
@@ -200,7 +199,7 @@
       <div class="full-bg-img">
         <div class="mask flex-center" style="background-color: rgba(0, 0, 0, 0.3)">
           <div class="page-header text-center fade-in-up">
-            <span class="h2" id="subtitle" title="Vscode之STM32环境搭建">
+            <span class="h2" id="subtitle" title="重装必备软件">
               
             </span>
 
@@ -210,8 +209,8 @@
   
     <span class="post-meta">
       <i class="iconfont icon-date-fill" aria-hidden="true"></i>
-      <time datetime="2022-08-09 18:10" pubdate>
-        2022年8月9日 晚上
+      <time datetime="2024-02-02 15:01" pubdate>
+        2024年2月2日 下午
       </time>
     </span>
   
@@ -221,7 +220,7 @@
   
     <span class="post-meta mr-2">
       <i class="iconfont icon-chart"></i>
-      495 字
+      1.2k 字
     </span>
   
 
@@ -230,7 +229,7 @@
       <i class="iconfont icon-clock-fill"></i>
       
       
-      5 分钟
+      11 分钟
     </span>
   
 
@@ -259,49 +258,173 @@
         <div class="py-5" id="board">
           <article class="post-content mx-auto">
             <!-- SEO header -->
-            <h1 style="display: none">Vscode之STM32环境搭建</h1>
+            <h1 style="display: none">重装必备软件</h1>
             
             <div class="markdown-body">
-              <p>总所周知，Keil采用的是比较旧的编辑器，使用起来贼不方便，为何不采用宇宙第一编辑器呢</p>
-<h2 id="使用思路"><a href="#使用思路" class="headerlink" title="使用思路"></a>使用思路</h2><p>除了在编辑方便使用<code>vscode</code>编辑器</p>
-<p>编译、下载以及调试还是采用<code>Keil</code></p>
-<h2 id="MinGW"><a href="#MinGW" class="headerlink" title="MinGW"></a>MinGW</h2><p><a target="_blank" rel="noopener" href="https://sourceforge.net/projects/mingw/">下载地址</a></p>
-<p>直接安装即可</p>
-<h2 id="vscode-插件"><a href="#vscode-插件" class="headerlink" title="vscode 插件"></a>vscode 插件</h2><h3 id="Keil-Assistant插件"><a href="#Keil-Assistant插件" class="headerlink" title="Keil Assistant插件"></a>Keil Assistant插件</h3><p>直接安装即可，进需要配置<code>Uv4 Path</code>位置即可</p>
-<h3 id="C-C-插件"><a href="#C-C-插件" class="headerlink" title="C/C++插件"></a>C/C++插件</h3><p>直接安装插件，加上简单地<code>MinGw</code>配置</p>
-<p>例如</p>
-<figure class="highlight bash"><table><tr><td class="gutter hljs"><div class="hljs code-wrapper"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br></pre></div></td><td class="code"><div class="hljs code-wrapper"><pre><code class="hljs bash"><span class="hljs-comment"># 1. Complier Path</span><br>C:\MinGW\bin\g++.exe<br><br><span class="hljs-comment"># 2. Include Path</span><br>C:\MinGW\lib\gcc\mingw32\6.3.0\include\c++<br></code></pre></div></td></tr></table></figure>
-
-<h2 id="问题"><a href="#问题" class="headerlink" title="问题"></a>问题</h2><h3 id="若出现-未定义标识符"><a href="#若出现-未定义标识符" class="headerlink" title="若出现 未定义标识符"></a>若出现 未定义标识符</h3><p>一般来说出现的这个东西叫做 错误波形曲线（Error Squiggles）简单地说直接关闭就好</p>
-<p>除了关闭还有一种方法</p>
-<p>将 <code>C_Cpp: Intelli Sense Engine</code> 设置为 <code>Tag Parser</code></p>
-<p>此番设置之后，绝对不会出现错误提示</p>
-<p>但也暴露出一个很大的问题</p>
-<p>就是一些简单的报错他不会提示</p>
-<p>所以前往不要设置</p>
-<h3 id="Other"><a href="#Other" class="headerlink" title="Other"></a>Other</h3><p>关于那些一开始的波浪线</p>
-<p>直接根据鼠标移过去的快速修复，即添加对应的 <code>includePath</code> 即可完成问题</p>
-<p>一些变量问题则需要添加对应的 <code>define</code></p>
+              <p>收录了我重装的时候需要安装的东西的下载页面</p>
+<h2 id="必备"><a href="#必备" class="headerlink" title="必备"></a>必备</h2><p><a target="_blank" rel="noopener" href="https://www.google.cn/intl/zh-CN/chrome/">Google</a><br><a target="_blank" rel="noopener" href="http://www.firefox.com.cn/">Firefox</a><br><a target="_blank" rel="noopener" href="https://im.qq.com/pcqq/">QQ</a><br><a target="_blank" rel="noopener" href="http://www.winrar.com.cn/download.htm">WinRAR</a><br><a target="_blank" rel="noopener" href="https://mcrip-vc-redist-installer.en.lo4d.com/download">VC++合集</a></p>
+<h2 id="程序员"><a href="#程序员" class="headerlink" title="程序员"></a>程序员</h2><p><a target="_blank" rel="noopener" href="https://visualstudio.microsoft.com/zh-hans/vs/">Vs</a><br><a target="_blank" rel="noopener" href="https://code.visualstudio.com/docs/?dv=win">vscode</a><br><a target="_blank" rel="noopener" href="https://www.sublimetext.com/3">Sublime Text 3</a><br><a target="_blank" rel="noopener" href="https://git-scm.com/download/win">Git</a><br><a target="_blank" rel="noopener" href="https://desktop.github.com/">Github Desktop</a><br><a target="_blank" rel="noopener" href="https://www.navicat.com.cn/download/navicat-premium">Navicat Premium-12.1</a></p>
+<h3 id="C"><a href="#C" class="headerlink" title="C"></a>C</h3><p><a target="_blank" rel="noopener" href="http://www.codeblocks.org/downloads/26#windows">codeblock-17.12</a></p>
+<h3 id="Java"><a href="#Java" class="headerlink" title="Java"></a>Java</h3><p><a target="_blank" rel="noopener" href="https://www.oracle.com/technetwork/java/javase/downloads/jdk8-downloads-2133151.html">JDK-1.8</a><br><a target="_blank" rel="noopener" href="https://www.eclipse.org/downloads/download.php?file=/oomph/epp/2018-12/R/eclipse-inst-win64.exe">eclipse-2018‑12</a><br><a target="_blank" rel="noopener" href="https://tomcat.apache.org/download-90.cgi">Tomcat-9</a><br><a target="_blank" rel="noopener" href="https://www.myeclipsecn.com/download/">Myeclipse</a><br><a target="_blank" rel="noopener" href="https://www.jetbrains.com/idea/download/#section=windows">Idea-2018.3.5</a></p>
+<h3 id="PHP"><a href="#PHP" class="headerlink" title="PHP"></a>PHP</h3><p><a target="_blank" rel="noopener" href="http://phpstudy.php.cn/">PhpStudy-20180211</a><br><a target="_blank" rel="noopener" href="https://getcomposer.org/download/">Composer</a></p>
+<h3 id="Python"><a href="#Python" class="headerlink" title="Python"></a>Python</h3><p><a target="_blank" rel="noopener" href="https://www.python.org/downloads/release/python-372/">python-3.7.2</a><br><a target="_blank" rel="noopener" href="https://www.python.org/downloads/release/python-2715/">python-2.7.15</a></p>
+<h3 id="Js"><a href="#Js" class="headerlink" title="Js"></a>Js</h3><p><a target="_blank" rel="noopener" href="https://nodejs.org/zh-cn/">node.js</a></p>
+<h2 id="日常"><a href="#日常" class="headerlink" title="日常"></a>日常</h2><p><a target="_blank" rel="noopener" href="https://pc.weixin.qq.com/">微信</a><br><a target="_blank" rel="noopener" href="https://www.wegame.com/client">WeGame</a><br><a target="_blank" rel="noopener" href="https://guanjia.qq.com/product/home/">腾讯电脑管家</a><br><a target="_blank" rel="noopener" href="https://v.qq.com/">腾讯视频</a><br><a target="_blank" rel="noopener" href="https://music.163.com/#/download">网易云音乐</a><br><a target="_blank" rel="noopener" href="https://pan.baidu.com/download">百度云盘</a><br><a target="_blank" rel="noopener" href="https://pinyin.sogou.com/">搜狗输入法</a><br><a target="_blank" rel="noopener" href="https://www.7-zip.org/">7z-2019-02-21</a><br><a target="_blank" rel="noopener" href="https://www.raidrive.com/download/">RaiDrive-1.5.3.1</a><br><a target="_blank" rel="noopener" href="http://www.potplayer.org/">Potplayer</a><br><a target="_blank" rel="noopener" href="https://www.voidtools.com/zh-cn/">Everything</a></p>
+<p>雷神模拟器<br>steam<br>markdown<br>小丸工具箱<br>XMind Zen<br>VMware<br>flashFXP</p>
+<table>
+<thead>
+<tr>
+<th>名称</th>
+<th>介绍</th>
+</tr>
+</thead>
+<tbody><tr>
+<td>Auto Close Tag</td>
+<td>自动闭合HTML标签</td>
+</tr>
+<tr>
+<td>Auto Rename Tag</td>
+<td>修改HTML标签时，自动修改匹配的标签</td>
+</tr>
+<tr>
+<td>Beautify</td>
+<td>美化vscode代码</td>
+</tr>
+<tr>
+<td>Bracket Pair Clolrizer 2</td>
+<td>每一对括号用不同颜色区别</td>
+</tr>
+<tr>
+<td>C/C++</td>
+<td>(禁用)</td>
+</tr>
+<tr>
+<td>change-case</td>
+<td>字符串转换处理（驼峰、大写开头、下划线等等）</td>
+</tr>
+<tr>
+<td>Chinese (simplifiled) Language</td>
+<td>汉化</td>
+</tr>
+<tr>
+<td>Code Runner</td>
+<td>运行选中代码段</td>
+</tr>
+<tr>
+<td>Color Info</td>
+<td>为提供 CSS 中使用颜色的相关信息</td>
+</tr>
+<tr>
+<td>CSS Peek</td>
+<td>追踪至样式表中 CSS 类和 ids 定义的地方</td>
+</tr>
+<tr>
+<td>Debugger for Chrome</td>
+<td>用 Chrome 来 Debug 你的 JavaScript 代码</td>
+</tr>
+<tr>
+<td>EditorConfig for vs code</td>
+<td>配置的代码规范规则</td>
+</tr>
+<tr>
+<td>File Peek</td>
+<td>根据路径字符串，快速定位到文件</td>
+</tr>
+<tr>
+<td>filesize</td>
+<td>查看文件大小</td>
+</tr>
+<tr>
+<td>HTML CSS support</td>
+<td>vscode对html，css文件支持，便于你快速书写属性</td>
+</tr>
+<tr>
+<td>HTML Snippets</td>
+<td>H5代码片段以及提示</td>
+</tr>
+<tr>
+<td>HTMLHint</td>
+<td>html代码检测</td>
+</tr>
+<tr>
+<td>IntelliSense for CSS class names in HTML</td>
+<td>通过link标签引用，提供 HTML 中 CSS class 名字的补全</td>
+</tr>
+<tr>
+<td>Live HTML Previewer</td>
+<td>实时html预览</td>
+</tr>
+<tr>
+<td>Markdown Preview Enhanced</td>
+<td>书写md文件的预览插件</td>
+</tr>
+<tr>
+<td>Material Icon theme</td>
+<td>禁用</td>
+</tr>
+<tr>
+<td>open in browser</td>
+<td>在浏览器中打开</td>
+</tr>
+<tr>
+<td>path Intellisense</td>
+<td>自动路径补全</td>
+</tr>
+<tr>
+<td>project Manager</td>
+<td>快速切换项目</td>
+</tr>
+<tr>
+<td>Python</td>
+<td>python</td>
+</tr>
+<tr>
+<td>Quokka.js</td>
+<td>实时执行 JavaScript 代码</td>
+</tr>
+<tr>
+<td>Regex Previewer</td>
+<td>实时测试正则表达式</td>
+</tr>
+<tr>
+<td>SVG Viewer</td>
+<td>SVG文件预览</td>
+</tr>
+<tr>
+<td>TODO Highlight</td>
+<td>标记出所有的 TODO 注释，以便更容易追踪任何未完成的业务</td>
+</tr>
+<tr>
+<td>Vetur</td>
+<td>vue插件</td>
+</tr>
+<tr>
+<td>Visual Studio Code Format</td>
+<td>格式化</td>
+</tr>
+<tr>
+<td>vscode-faker</td>
+<td>填充信息</td>
+</tr>
+<tr>
+<td>vscode-fileheader</td>
+<td>为文件提供作者信息</td>
+</tr>
+<tr>
+<td>vscode-icons</td>
+<td>图标</td>
+</tr>
+<tr>
+<td>SFTP</td>
+<td>代码通过ftp自动上传</td>
+</tr>
+</tbody></table>
 
             </div>
             <hr>
             <div>
               <div class="post-metas mb-3">
                 
-                  <div class="post-meta mr-3">
-                    <i class="iconfont icon-category"></i>
-                    
-                      <a class="hover-with-bg" href="/categories/%E5%9C%A8vscode%E6%90%AD%E5%BB%BASTM32%E7%8E%AF%E5%A2%83/">在vscode搭建STM32环境</a>
-                    
-                  </div>
-                
-                
-                  <div class="post-meta">
-                    <i class="iconfont icon-tags"></i>
-                    
-                      <a class="hover-with-bg" href="/tags/STM32/">STM32</a>
-                    
-                  </div>
                 
               </div>
               
@@ -316,9 +439,9 @@
                   <article class="post-prev col-6">
                     
                     
-                      <a href="/2024/02/02/016/">
+                      <a href="/2024/02/02/018/">
                         <i class="iconfont icon-arrowleft"></i>
-                        <span class="hidden-mobile">零碎的知识点</span>
+                        <span class="hidden-mobile">Jetbrain全家桶个性化</span>
                         <span class="visible-mobile">上一篇</span>
                       </a>
                     
@@ -326,8 +449,8 @@
                   <article class="post-next col-6">
                     
                     
-                      <a href="/2022/03/09/014/">
-                        <span class="hidden-mobile">Mac环境下PHP继承环境MAMP的部署</span>
+                      <a href="/2024/02/02/016/">
+                        <span class="hidden-mobile">零碎的知识点</span>
                         <span class="visible-mobile">下一篇</span>
                         <i class="iconfont icon-arrowright"></i>
                       </a>

@@ -16,21 +16,22 @@
   <meta name="author" content="mobenw">
   <meta name="keywords" content="">
   
-    <meta name="description" content="如何优雅的使用vscode编写stm32代码">
+    <meta name="description" content="这速度 你能满意 代码不背锅 绝对是服务器背锅">
 <meta property="og:type" content="article">
-<meta property="og:title" content="Vscode之STM32环境搭建">
-<meta property="og:url" content="http://example.com/2022/08/09/015/index.html">
+<meta property="og:title" content="转移Hexo搭建的博客到自己的阿里云服务器">
+<meta property="og:url" content="http://example.com/2018/08/07/003/index.html">
 <meta property="og:site_name" content="Mobenw">
-<meta property="og:description" content="如何优雅的使用vscode编写stm32代码">
+<meta property="og:description" content="这速度 你能满意 代码不背锅 绝对是服务器背锅">
 <meta property="og:locale" content="zh_CN">
-<meta property="article:published_time" content="2022-08-09T10:10:50.000Z">
-<meta property="article:modified_time" content="2024-02-01T07:40:29.836Z">
+<meta property="article:published_time" content="2018-08-07T13:18:20.000Z">
+<meta property="article:modified_time" content="2024-02-02T07:17:59.477Z">
 <meta property="article:author" content="mobenw">
-<meta property="article:tag" content="STM32">
+<meta property="article:tag" content="Hexo">
+<meta property="article:tag" content="NexT">
 <meta name="twitter:card" content="summary_large_image">
   
   
-  <title>Vscode之STM32环境搭建 - Mobenw</title>
+  <title>转移Hexo搭建的博客到自己的阿里云服务器 - Mobenw</title>
 
   <link  rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap@4/dist/css/bootstrap.min.css" />
 
@@ -200,7 +201,7 @@
       <div class="full-bg-img">
         <div class="mask flex-center" style="background-color: rgba(0, 0, 0, 0.3)">
           <div class="page-header text-center fade-in-up">
-            <span class="h2" id="subtitle" title="Vscode之STM32环境搭建">
+            <span class="h2" id="subtitle" title="转移Hexo搭建的博客到自己的阿里云服务器">
               
             </span>
 
@@ -210,8 +211,8 @@
   
     <span class="post-meta">
       <i class="iconfont icon-date-fill" aria-hidden="true"></i>
-      <time datetime="2022-08-09 18:10" pubdate>
-        2022年8月9日 晚上
+      <time datetime="2018-08-07 21:18" pubdate>
+        2018年8月7日 晚上
       </time>
     </span>
   
@@ -221,7 +222,7 @@
   
     <span class="post-meta mr-2">
       <i class="iconfont icon-chart"></i>
-      495 字
+      886 字
     </span>
   
 
@@ -230,7 +231,7 @@
       <i class="iconfont icon-clock-fill"></i>
       
       
-      5 分钟
+      8 分钟
     </span>
   
 
@@ -259,29 +260,39 @@
         <div class="py-5" id="board">
           <article class="post-content mx-auto">
             <!-- SEO header -->
-            <h1 style="display: none">Vscode之STM32环境搭建</h1>
+            <h1 style="display: none">转移Hexo搭建的博客到自己的阿里云服务器</h1>
             
             <div class="markdown-body">
-              <p>总所周知，Keil采用的是比较旧的编辑器，使用起来贼不方便，为何不采用宇宙第一编辑器呢</p>
-<h2 id="使用思路"><a href="#使用思路" class="headerlink" title="使用思路"></a>使用思路</h2><p>除了在编辑方便使用<code>vscode</code>编辑器</p>
-<p>编译、下载以及调试还是采用<code>Keil</code></p>
-<h2 id="MinGW"><a href="#MinGW" class="headerlink" title="MinGW"></a>MinGW</h2><p><a target="_blank" rel="noopener" href="https://sourceforge.net/projects/mingw/">下载地址</a></p>
-<p>直接安装即可</p>
-<h2 id="vscode-插件"><a href="#vscode-插件" class="headerlink" title="vscode 插件"></a>vscode 插件</h2><h3 id="Keil-Assistant插件"><a href="#Keil-Assistant插件" class="headerlink" title="Keil Assistant插件"></a>Keil Assistant插件</h3><p>直接安装即可，进需要配置<code>Uv4 Path</code>位置即可</p>
-<h3 id="C-C-插件"><a href="#C-C-插件" class="headerlink" title="C/C++插件"></a>C/C++插件</h3><p>直接安装插件，加上简单地<code>MinGw</code>配置</p>
-<p>例如</p>
-<figure class="highlight bash"><table><tr><td class="gutter hljs"><div class="hljs code-wrapper"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br></pre></div></td><td class="code"><div class="hljs code-wrapper"><pre><code class="hljs bash"><span class="hljs-comment"># 1. Complier Path</span><br>C:\MinGW\bin\g++.exe<br><br><span class="hljs-comment"># 2. Include Path</span><br>C:\MinGW\lib\gcc\mingw32\6.3.0\include\c++<br></code></pre></div></td></tr></table></figure>
+              <p>上一篇文章介绍了如何配置<code>Hexo</code>，但是在使用的时候发现<code>Github</code>的速度并不能让人满意，于是开始转战我的阿里云</p>
+<h3 id="创建一个-git-用户-专门运行-git-服务"><a href="#创建一个-git-用户-专门运行-git-服务" class="headerlink" title="创建一个 git 用户 专门运行 git 服务"></a>创建一个 <code>git</code> 用户 专门运行 <code>git</code> 服务</h3><figure class="highlight bash"><table><tr><td class="gutter hljs"><div class="hljs code-wrapper"><pre><span class="line">1</span><br></pre></div></td><td class="code"><div class="hljs code-wrapper"><pre><code class="hljs Bash">$ sudo adduser git<br></code></pre></div></td></tr></table></figure>
+<p>为了安全</p>
+<h3 id="ssh-连接配对"><a href="#ssh-连接配对" class="headerlink" title="ssh 连接配对"></a>ssh 连接配对</h3><figure class="highlight bash"><table><tr><td class="gutter hljs"><div class="hljs code-wrapper"><pre><span class="line">1</span><br></pre></div></td><td class="code"><div class="hljs code-wrapper"><pre><code class="hljs Bash">$ ssh-keygen<br></code></pre></div></td></tr></table></figure>
+<p>创建公钥私钥对</p>
+<figure class="highlight bash"><table><tr><td class="gutter hljs"><div class="hljs code-wrapper"><pre><span class="line">1</span><br></pre></div></td><td class="code"><div class="hljs code-wrapper"><pre><code class="hljs Bash">$ ssh-copy-id -i .ssh/id_rsa.pub  用户名字@192.168.x.xxx<br></code></pre></div></td></tr></table></figure>
+<p>将公钥复制到远程机器中</p>
+<p>我的ssh好像翻车了 但是问题不大 手动输入密码<br>这里的作用就是方便连接</p>
+<blockquote>
+<p><code>ssh-keygen</code>  产生公钥与私钥对.<br><code>ssh-copy-id</code> 将本机的公钥复制到远程机器的<br>创建证书登录，把自己电脑的公钥，也就是 <code>~/.ssh/id_rsa.pub</code> 文件里的内容添加到服务器的 <code>/home/git/.ssh/authorized_keys</code> 文件中，添加公钥之后可以防止每次 push 都输入密码。</p>
+</blockquote>
+<h3 id="在服务器上弄个-Git-仓库"><a href="#在服务器上弄个-Git-仓库" class="headerlink" title="在服务器上弄个 Git 仓库"></a>在服务器上弄个 Git 仓库</h3><figure class="highlight shell"><table><tr><td class="gutter hljs"><div class="hljs code-wrapper"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br></pre></div></td><td class="code"><div class="hljs code-wrapper"><pre><code class="hljs shell"><span class="hljs-meta prompt_">$ </span><span class="language-bash"><span class="hljs-built_in">mkdir</span> hexo.git</span><br><span class="hljs-meta prompt_">$ </span><span class="language-bash"><span class="hljs-built_in">cd</span> hexo.git</span><br><span class="hljs-meta prompt_">$ </span><span class="language-bash">git init --bare</span><br></code></pre></div></td></tr></table></figure>
+<p>使用 –bare 参数，Git 就会创建一个裸仓库，为共享而存在</p>
+<h3 id="编写脚本"><a href="#编写脚本" class="headerlink" title="编写脚本"></a>编写脚本</h3><figure class="highlight bash"><table><tr><td class="gutter hljs"><div class="hljs code-wrapper"><pre><span class="line">1</span><br></pre></div></td><td class="code"><div class="hljs code-wrapper"><pre><code class="hljs Bash">`$ <span class="hljs-built_in">cd</span> /home/git/hexo.git/hooks`<br></code></pre></div></td></tr></table></figure>
 
-<h2 id="问题"><a href="#问题" class="headerlink" title="问题"></a>问题</h2><h3 id="若出现-未定义标识符"><a href="#若出现-未定义标识符" class="headerlink" title="若出现 未定义标识符"></a>若出现 未定义标识符</h3><p>一般来说出现的这个东西叫做 错误波形曲线（Error Squiggles）简单地说直接关闭就好</p>
-<p>除了关闭还有一种方法</p>
-<p>将 <code>C_Cpp: Intelli Sense Engine</code> 设置为 <code>Tag Parser</code></p>
-<p>此番设置之后，绝对不会出现错误提示</p>
-<p>但也暴露出一个很大的问题</p>
-<p>就是一些简单的报错他不会提示</p>
-<p>所以前往不要设置</p>
-<h3 id="Other"><a href="#Other" class="headerlink" title="Other"></a>Other</h3><p>关于那些一开始的波浪线</p>
-<p>直接根据鼠标移过去的快速修复，即添加对应的 <code>includePath</code> 即可完成问题</p>
-<p>一些变量问题则需要添加对应的 <code>define</code></p>
+<figure class="highlight bash"><table><tr><td class="gutter hljs"><div class="hljs code-wrapper"><pre><span class="line">1</span><br></pre></div></td><td class="code"><div class="hljs code-wrapper"><pre><code class="hljs Bash">`$ vim post-receive`<br></code></pre></div></td></tr></table></figure>
+
+<figure class="highlight bash"><table><tr><td class="gutter hljs"><div class="hljs code-wrapper"><pre><span class="line">1</span><br><span class="line">2</span><br></pre></div></td><td class="code"><div class="hljs code-wrapper"><pre><code class="hljs Bash"><span class="hljs-meta">#!/bin/sh</span><br>git --work-tree=/www/wwwroot/www.mobenw.cn --git-dir=/home/git/hexo.git checkout -f<br></code></pre></div></td></tr></table></figure>
+<blockquote>
+<p><code>/www/wwwroot/www.mobenw.cn</code> 网站目录<br><code>/home/git/hexo.git</code> 仓库</p>
+</blockquote>
+<p>以上操作实现了自动部署的功能</p>
+<h3 id="提权"><a href="#提权" class="headerlink" title="提权"></a>提权</h3><figure class="highlight bash"><table><tr><td class="gutter hljs"><div class="hljs code-wrapper"><pre><span class="line">1</span><br><span class="line">2</span><br></pre></div></td><td class="code"><div class="hljs code-wrapper"><pre><code class="hljs Bash">$ <span class="hljs-built_in">chmod</span> +x post-receive<br>为这个文件提权<br></code></pre></div></td></tr></table></figure>
+<figure class="highlight bash"><table><tr><td class="gutter hljs"><div class="hljs code-wrapper"><pre><span class="line">1</span><br></pre></div></td><td class="code"><div class="hljs code-wrapper"><pre><code class="hljs Bash">$ sudo <span class="hljs-built_in">chown</span> -R git:git hexo.git<br></code></pre></div></td></tr></table></figure>
+<p>使<code>hexo.blog</code>该目录的拥有者为 <code>git</code></p>
+<p><code>$ chmod 777 -R /www/wwwroot/www.mobenw.cn</code><br>至少这里有写的权限</p>
+<h3 id="本地配置"><a href="#本地配置" class="headerlink" title="本地配置"></a>本地配置</h3><p>本地<code>hexo</code>目录下的<br><strong><code>_config.yml</code></strong></p>
+<figure class="highlight yml"><table><tr><td class="gutter hljs"><div class="hljs code-wrapper"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br></pre></div></td><td class="code"><div class="hljs code-wrapper"><pre><code class="hljs yml"><span class="hljs-attr">deploy:</span><br>  <span class="hljs-attr">type:</span> <span class="hljs-string">git</span><br>  <span class="hljs-attr">repo:</span> <br>    <span class="hljs-attr">aliyun:</span> <span class="hljs-string">git@192.168.x.xxx:/home/git/hexo.git</span><br></code></pre></div></td></tr></table></figure>
+
+<h3 id="收工"><a href="#收工" class="headerlink" title="收工"></a>收工</h3><p>接下来就是正常的 hexo 的操作…</p>
 
             </div>
             <hr>
@@ -291,7 +302,7 @@
                   <div class="post-meta mr-3">
                     <i class="iconfont icon-category"></i>
                     
-                      <a class="hover-with-bg" href="/categories/%E5%9C%A8vscode%E6%90%AD%E5%BB%BASTM32%E7%8E%AF%E5%A2%83/">在vscode搭建STM32环境</a>
+                      <a class="hover-with-bg" href="/categories/Hexo%E5%8D%9A%E5%AE%A2%E6%90%AD%E5%BB%BA/">Hexo博客搭建</a>
                     
                   </div>
                 
@@ -299,7 +310,9 @@
                   <div class="post-meta">
                     <i class="iconfont icon-tags"></i>
                     
-                      <a class="hover-with-bg" href="/tags/STM32/">STM32</a>
+                      <a class="hover-with-bg" href="/tags/Hexo/">Hexo</a>
+                    
+                      <a class="hover-with-bg" href="/tags/NexT/">NexT</a>
                     
                   </div>
                 
@@ -316,9 +329,9 @@
                   <article class="post-prev col-6">
                     
                     
-                      <a href="/2024/02/02/016/">
+                      <a href="/2018/12/12/004/">
                         <i class="iconfont icon-arrowleft"></i>
-                        <span class="hidden-mobile">零碎的知识点</span>
+                        <span class="hidden-mobile">手动破解 XMind ZEN</span>
                         <span class="visible-mobile">上一篇</span>
                       </a>
                     
@@ -326,8 +339,8 @@
                   <article class="post-next col-6">
                     
                     
-                      <a href="/2022/03/09/014/">
-                        <span class="hidden-mobile">Mac环境下PHP继承环境MAMP的部署</span>
+                      <a href="/2018/08/07/002/">
+                        <span class="hidden-mobile">博客美化记</span>
                         <span class="visible-mobile">下一篇</span>
                         <i class="iconfont icon-arrowright"></i>
                       </a>

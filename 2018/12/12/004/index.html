@@ -16,22 +16,24 @@
   <meta name="author" content="mobenw">
   <meta name="keywords" content="">
   
-    <meta name="description" content="这速度 你能满意 代码不背锅 绝对是服务器背锅">
+    <meta name="description" content="别再为水印和弹窗烦恼了">
 <meta property="og:type" content="article">
-<meta property="og:title" content="转移Hexo搭建的博客到自己的阿里云服务器">
-<meta property="og:url" content="http://example.com/2018/08/07/003.Blog-transfer-Hexo-built-blog-to-own-server/index.html">
+<meta property="og:title" content="手动破解 XMind ZEN">
+<meta property="og:url" content="http://example.com/2018/12/12/004/index.html">
 <meta property="og:site_name" content="Mobenw">
-<meta property="og:description" content="这速度 你能满意 代码不背锅 绝对是服务器背锅">
+<meta property="og:description" content="别再为水印和弹窗烦恼了">
 <meta property="og:locale" content="zh_CN">
-<meta property="article:published_time" content="2018-08-07T13:18:20.000Z">
+<meta property="og:image" content="https://worklink.oss-cn-hangzhou.aliyuncs.com/F2C511F928C1FB60DF3883CD36CE8B12.png">
+<meta property="article:published_time" content="2018-12-12T06:29:57.000Z">
 <meta property="article:modified_time" content="2024-02-01T07:40:29.835Z">
 <meta property="article:author" content="mobenw">
-<meta property="article:tag" content="Hexo">
-<meta property="article:tag" content="NexT">
+<meta property="article:tag" content="破解">
+<meta property="article:tag" content="Xmind">
 <meta name="twitter:card" content="summary_large_image">
+<meta name="twitter:image" content="https://worklink.oss-cn-hangzhou.aliyuncs.com/F2C511F928C1FB60DF3883CD36CE8B12.png">
   
   
-  <title>转移Hexo搭建的博客到自己的阿里云服务器 - Mobenw</title>
+  <title>手动破解 XMind ZEN - Mobenw</title>
 
   <link  rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap@4/dist/css/bootstrap.min.css" />
 
@@ -201,7 +203,7 @@
       <div class="full-bg-img">
         <div class="mask flex-center" style="background-color: rgba(0, 0, 0, 0.3)">
           <div class="page-header text-center fade-in-up">
-            <span class="h2" id="subtitle" title="转移Hexo搭建的博客到自己的阿里云服务器">
+            <span class="h2" id="subtitle" title="手动破解 XMind ZEN">
               
             </span>
 
@@ -211,8 +213,8 @@
   
     <span class="post-meta">
       <i class="iconfont icon-date-fill" aria-hidden="true"></i>
-      <time datetime="2018-08-07 21:18" pubdate>
-        2018年8月7日 晚上
+      <time datetime="2018-12-12 14:29" pubdate>
+        2018年12月12日 下午
       </time>
     </span>
   
@@ -222,7 +224,7 @@
   
     <span class="post-meta mr-2">
       <i class="iconfont icon-chart"></i>
-      886 字
+      891 字
     </span>
   
 
@@ -260,39 +262,33 @@
         <div class="py-5" id="board">
           <article class="post-content mx-auto">
             <!-- SEO header -->
-            <h1 style="display: none">转移Hexo搭建的博客到自己的阿里云服务器</h1>
+            <h1 style="display: none">手动破解 XMind ZEN</h1>
             
             <div class="markdown-body">
-              <p>上一篇文章介绍了如何配置<code>Hexo</code>，但是在使用的时候发现<code>Github</code>的速度并不能让人满意，于是开始转战我的阿里云</p>
-<h3 id="创建一个-git-用户-专门运行-git-服务"><a href="#创建一个-git-用户-专门运行-git-服务" class="headerlink" title="创建一个 git 用户 专门运行 git 服务"></a>创建一个 <code>git</code> 用户 专门运行 <code>git</code> 服务</h3><figure class="highlight bash"><table><tr><td class="gutter hljs"><div class="hljs code-wrapper"><pre><span class="line">1</span><br></pre></div></td><td class="code"><div class="hljs code-wrapper"><pre><code class="hljs Bash">$ sudo adduser git<br></code></pre></div></td></tr></table></figure>
-<p>为了安全</p>
-<h3 id="ssh-连接配对"><a href="#ssh-连接配对" class="headerlink" title="ssh 连接配对"></a>ssh 连接配对</h3><figure class="highlight bash"><table><tr><td class="gutter hljs"><div class="hljs code-wrapper"><pre><span class="line">1</span><br></pre></div></td><td class="code"><div class="hljs code-wrapper"><pre><code class="hljs Bash">$ ssh-keygen<br></code></pre></div></td></tr></table></figure>
-<p>创建公钥私钥对</p>
-<figure class="highlight bash"><table><tr><td class="gutter hljs"><div class="hljs code-wrapper"><pre><span class="line">1</span><br></pre></div></td><td class="code"><div class="hljs code-wrapper"><pre><code class="hljs Bash">$ ssh-copy-id -i .ssh/id_rsa.pub  用户名字@192.168.x.xxx<br></code></pre></div></td></tr></table></figure>
-<p>将公钥复制到远程机器中</p>
-<p>我的ssh好像翻车了 但是问题不大 手动输入密码<br>这里的作用就是方便连接</p>
+              <p>首先说明一下，尊重作者的产品。</p>
+<p>本片文章思路来源于<a target="_blank" rel="noopener" href="https://dxkite.cn/2018/11/17/xmind-zen-remove-watermark/">dx老哥的文章</a>，仅加以完善。</p>
 <blockquote>
-<p><code>ssh-keygen</code>  产生公钥与私钥对.<br><code>ssh-copy-id</code> 将本机的公钥复制到远程机器的<br>创建证书登录，把自己电脑的公钥，也就是 <code>~/.ssh/id_rsa.pub</code> 文件里的内容添加到服务器的 <code>/home/git/.ssh/authorized_keys</code> 文件中，添加公钥之后可以防止每次 push 都输入密码。</p>
+<p><code>XMind ZEN</code> 是一款免费的软件，只是在导出的时候安排上了专属水印</p>
 </blockquote>
-<h3 id="在服务器上弄个-Git-仓库"><a href="#在服务器上弄个-Git-仓库" class="headerlink" title="在服务器上弄个 Git 仓库"></a>在服务器上弄个 Git 仓库</h3><figure class="highlight shell"><table><tr><td class="gutter hljs"><div class="hljs code-wrapper"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br></pre></div></td><td class="code"><div class="hljs code-wrapper"><pre><code class="hljs shell"><span class="hljs-meta prompt_">$ </span><span class="language-bash"><span class="hljs-built_in">mkdir</span> hexo.git</span><br><span class="hljs-meta prompt_">$ </span><span class="language-bash"><span class="hljs-built_in">cd</span> hexo.git</span><br><span class="hljs-meta prompt_">$ </span><span class="language-bash">git init --bare</span><br></code></pre></div></td></tr></table></figure>
-<p>使用 –bare 参数，Git 就会创建一个裸仓库，为共享而存在</p>
-<h3 id="编写脚本"><a href="#编写脚本" class="headerlink" title="编写脚本"></a>编写脚本</h3><figure class="highlight bash"><table><tr><td class="gutter hljs"><div class="hljs code-wrapper"><pre><span class="line">1</span><br></pre></div></td><td class="code"><div class="hljs code-wrapper"><pre><code class="hljs Bash">`$ <span class="hljs-built_in">cd</span> /home/git/hexo.git/hooks`<br></code></pre></div></td></tr></table></figure>
-
-<figure class="highlight bash"><table><tr><td class="gutter hljs"><div class="hljs code-wrapper"><pre><span class="line">1</span><br></pre></div></td><td class="code"><div class="hljs code-wrapper"><pre><code class="hljs Bash">`$ vim post-receive`<br></code></pre></div></td></tr></table></figure>
-
-<figure class="highlight bash"><table><tr><td class="gutter hljs"><div class="hljs code-wrapper"><pre><span class="line">1</span><br><span class="line">2</span><br></pre></div></td><td class="code"><div class="hljs code-wrapper"><pre><code class="hljs Bash"><span class="hljs-meta">#!/bin/sh</span><br>git --work-tree=/www/wwwroot/www.mobenw.cn --git-dir=/home/git/hexo.git checkout -f<br></code></pre></div></td></tr></table></figure>
-<blockquote>
-<p><code>/www/wwwroot/www.mobenw.cn</code> 网站目录<br><code>/home/git/hexo.git</code> 仓库</p>
-</blockquote>
-<p>以上操作实现了自动部署的功能</p>
-<h3 id="提权"><a href="#提权" class="headerlink" title="提权"></a>提权</h3><figure class="highlight bash"><table><tr><td class="gutter hljs"><div class="hljs code-wrapper"><pre><span class="line">1</span><br><span class="line">2</span><br></pre></div></td><td class="code"><div class="hljs code-wrapper"><pre><code class="hljs Bash">$ <span class="hljs-built_in">chmod</span> +x post-receive<br>为这个文件提权<br></code></pre></div></td></tr></table></figure>
-<figure class="highlight bash"><table><tr><td class="gutter hljs"><div class="hljs code-wrapper"><pre><span class="line">1</span><br></pre></div></td><td class="code"><div class="hljs code-wrapper"><pre><code class="hljs Bash">$ sudo <span class="hljs-built_in">chown</span> -R git:git hexo.git<br></code></pre></div></td></tr></table></figure>
-<p>使<code>hexo.blog</code>该目录的拥有者为 <code>git</code></p>
-<p><code>$ chmod 777 -R /www/wwwroot/www.mobenw.cn</code><br>至少这里有写的权限</p>
-<h3 id="本地配置"><a href="#本地配置" class="headerlink" title="本地配置"></a>本地配置</h3><p>本地<code>hexo</code>目录下的<br><strong><code>_config.yml</code></strong></p>
-<figure class="highlight yml"><table><tr><td class="gutter hljs"><div class="hljs code-wrapper"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br></pre></div></td><td class="code"><div class="hljs code-wrapper"><pre><code class="hljs yml"><span class="hljs-attr">deploy:</span><br>  <span class="hljs-attr">type:</span> <span class="hljs-string">git</span><br>  <span class="hljs-attr">repo:</span> <br>    <span class="hljs-attr">aliyun:</span> <span class="hljs-string">git@192.168.x.xxx:/home/git/hexo.git</span><br></code></pre></div></td></tr></table></figure>
-
-<h3 id="收工"><a href="#收工" class="headerlink" title="收工"></a>收工</h3><p>接下来就是正常的 hexo 的操作…</p>
+<p>这次的破解 采用绕过式 仅属于娱乐</p>
+<h2 id="干货"><a href="#干货" class="headerlink" title="干货"></a>干货</h2><p>首先我们需要了解一下我们的<code>XMind ZEN</code>的安装位置在哪:<br><code>C:\Program Files\XMind ZEN</code><br><img src="https://worklink.oss-cn-hangzhou.aliyuncs.com/5DCEAA909885A0DB44922255FD2EB09D.png" srcset="/img/loading.gif" lazyload alt="1.png"></p>
+<p>我们采用的方法 不是删除，而是替换</p>
+<h3 id="导出水印"><a href="#导出水印" class="headerlink" title="导出水印"></a>导出水印</h3><p>然后我们需要了解一下</p>
+<p>矢量图文件位置：<code>resources\out\imgs\[类型]-watermark-[语言].svg</code><br>比如：中文的PNG导出的水印：矢量图文件位置：<code>resources\out\imgs\png-watermark-zh-CN.svg</code></p>
+<h4 id="PNG去水印"><a href="#PNG去水印" class="headerlink" title="PNG去水印"></a>PNG去水印</h4><p>因为我们大部分采用的都是中文模式，所以对应的文件应该是：<br><code>resources\out\imgs\png-watermark-zh-CN.svg</code></p>
+<p>这里拿英文版本的进行对比<br><img src="https://worklink.oss-cn-hangzhou.aliyuncs.com/FC72626A58FA29D28A086A3455519A85.png" srcset="/img/loading.gif" lazyload alt="2.png"></p>
+<p>我们将不透明度设置为0，即全透明，不影响导出</p>
+<h4 id="PDF去水印"><a href="#PDF去水印" class="headerlink" title="PDF去水印"></a>PDF去水印</h4><p>pdf背景水印路径：<br><code>resources\app\out\imgs\print-watermark-zh-CN.svg</code><br><img src="https://worklink.oss-cn-hangzhou.aliyuncs.com/06D62F60B8859F26AE92F37DBFB06012.png" srcset="/img/loading.gif" lazyload alt="3.png"><br>将它设置为透明 <code>opacity=&quot;0&quot;</code></p>
+<p>pdf 底部水印<br><code>resources\app\out\imgs\pdf-footer-zh-CN.svg</code><br><img src="https://worklink.oss-cn-hangzhou.aliyuncs.com/1228D378053B25A7D950DEA1A160D265.png" srcset="/img/loading.gif" lazyload alt="4.png"><br>我们可以考虑下 添加透明度 <code>opacity=&quot;0&quot;</code></p>
+<p>到这里 我们其实可以发现<br>除了手动添加一定内容，也可以考虑把水印内容全部删除，也有同样的奇效</p>
+<h3 id="订阅弹窗"><a href="#订阅弹窗" class="headerlink" title="订阅弹窗"></a>订阅弹窗</h3><p>在保存的时候时常会出现一个窗口，提示你订阅购买该产品<br><img src="https://worklink.oss-cn-hangzhou.aliyuncs.com/F95DAE3D6848C6A60C6DBA02B91EF3CC.png" srcset="/img/loading.gif" lazyload alt="5.png"></p>
+<p>这个比较神奇<br>首先我们找到路径<br><code>resources\app\out\modal-activateAlert.js</code><br>发现这个js文件压缩在一起了</p>
+<p>于是</p>
+<p>找一个<a target="_blank" rel="noopener" href="http://tool.chinaz.com/tools/jsformat.aspx">在线js格式化</a> <code>格式化</code>一下</p>
+<p>然后再复制粘贴回来</p>
+<p>于是奇效发生了</p>
+<p>ps.只适合 <code>v9.1.3</code>版本之前，因为在这个版本之后对文件进行了打包<br>可以考虑到该文件下<br><code>resources\app\locales\new_translations.json</code><br>进行修改取消更新提醒 <code>&quot;Software Update&quot;: false,</code></p>
+<h2 id="附件"><a href="#附件" class="headerlink" title="附件"></a>附件</h2><p><a target="_blank" rel="noopener" href="https://www.lanzous.com/i2lfoeb">XMind ZEN v9.0.6</a></p>
 
             </div>
             <hr>
@@ -302,7 +298,7 @@
                   <div class="post-meta mr-3">
                     <i class="iconfont icon-category"></i>
                     
-                      <a class="hover-with-bg" href="/categories/Hexo%E5%8D%9A%E5%AE%A2%E6%90%AD%E5%BB%BA/">Hexo博客搭建</a>
+                      <a class="hover-with-bg" href="/categories/%E6%9D%82%E8%AE%B0/">杂记</a>
                     
                   </div>
                 
@@ -310,9 +306,9 @@
                   <div class="post-meta">
                     <i class="iconfont icon-tags"></i>
                     
-                      <a class="hover-with-bg" href="/tags/Hexo/">Hexo</a>
+                      <a class="hover-with-bg" href="/tags/%E7%A0%B4%E8%A7%A3/">破解</a>
                     
-                      <a class="hover-with-bg" href="/tags/NexT/">NexT</a>
+                      <a class="hover-with-bg" href="/tags/Xmind/">Xmind</a>
                     
                   </div>
                 
@@ -329,9 +325,9 @@
                   <article class="post-prev col-6">
                     
                     
-                      <a href="/2018/12/12/004.Poje-XMind-ZEN/">
+                      <a href="/2021/12/26/010/">
                         <i class="iconfont icon-arrowleft"></i>
-                        <span class="hidden-mobile">手动破解 XMind ZEN</span>
+                        <span class="hidden-mobile">有关于MAC环境下安装SQL Server的PHP扩展</span>
                         <span class="visible-mobile">上一篇</span>
                       </a>
                     
@@ -339,8 +335,8 @@
                   <article class="post-next col-6">
                     
                     
-                      <a href="/2018/08/07/002.Blog-to-optimize/">
-                        <span class="hidden-mobile">博客美化记</span>
+                      <a href="/2018/08/07/003/">
+                        <span class="hidden-mobile">转移Hexo搭建的博客到自己的阿里云服务器</span>
                         <span class="visible-mobile">下一篇</span>
                         <i class="iconfont icon-arrowright"></i>
                       </a>

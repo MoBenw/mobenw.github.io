@@ -19,12 +19,12 @@
     <meta name="description" content="博客是个好东西啊 第一次来体验一番由自己搭建的一个博客 有点简陋别笑 关于没有图片 是因为还没有还找到合适的图床">
 <meta property="og:type" content="article">
 <meta property="og:title" content="使用GitHub和Hexo搭建自己的博客">
-<meta property="og:url" content="http://example.com/2018/08/06/001.Blog-build-your-own-blog-with-GitHub-and-Hexo/index.html">
+<meta property="og:url" content="http://example.com/2018/08/06/001/index.html">
 <meta property="og:site_name" content="Mobenw">
 <meta property="og:description" content="博客是个好东西啊 第一次来体验一番由自己搭建的一个博客 有点简陋别笑 关于没有图片 是因为还没有还找到合适的图床">
 <meta property="og:locale" content="zh_CN">
 <meta property="article:published_time" content="2018-08-06T08:31:21.000Z">
-<meta property="article:modified_time" content="2024-02-01T07:40:29.835Z">
+<meta property="article:modified_time" content="2024-02-02T07:17:41.544Z">
 <meta property="article:author" content="mobenw">
 <meta property="article:tag" content="Hexo">
 <meta property="article:tag" content="NexT">
@@ -276,25 +276,25 @@
 </blockquote>
 <p>操作空间不大，一路默认</p>
 <h3 id="正式开始"><a href="#正式开始" class="headerlink" title="正式开始"></a>正式开始</h3><h4 id="安装-Hexo"><a href="#安装-Hexo" class="headerlink" title="安装 Hexo"></a>安装 Hexo</h4><p>进入命令行 输入命令</p>
-<div class="hljs code-wrapper"><pre><code>npm install -g hexo
-</code></pre></div>
+<figure class="highlight bash"><table><tr><td class="gutter hljs"><div class="hljs code-wrapper"><pre><span class="line">1</span><br></pre></div></td><td class="code"><div class="hljs code-wrapper"><pre><code class="hljs bash">npm install -g hexo<br></code></pre></div></td></tr></table></figure>
+
 <p>顺便把这个也安装一下 自动部署发布工具</p>
-<div class="hljs code-wrapper"><pre><code>  npm install hexo-deployer-git  --save
-</code></pre></div>
+<figure class="highlight bash"><table><tr><td class="gutter hljs"><div class="hljs code-wrapper"><pre><span class="line">1</span><br></pre></div></td><td class="code"><div class="hljs code-wrapper"><pre><code class="hljs bash">npm install hexo-deployer-git  --save<br></code></pre></div></td></tr></table></figure>
+
 <h4 id="初始化-Hexo"><a href="#初始化-Hexo" class="headerlink" title="初始化 Hexo"></a>初始化 Hexo</h4><p>选择你博客存放的位置 (建议创建一个新的文件夹_初始化需要一个空的文件夹)<br>然后命令行输入命令</p>
-<div class="hljs code-wrapper"><pre><code>hexo init
-</code></pre></div>
+<figure class="highlight bash"><table><tr><td class="gutter hljs"><div class="hljs code-wrapper"><pre><span class="line">1</span><br></pre></div></td><td class="code"><div class="hljs code-wrapper"><pre><code class="hljs bash">hexo init<br></code></pre></div></td></tr></table></figure>
+
 <h4 id="git主题"><a href="#git主题" class="headerlink" title="git主题"></a>git主题</h4><p>本身自带主题 可以暂时跳过该操作 若需要更换主题时再进行操作</p>
 <blockquote>
 <p>此处以我使用的主题为例<br>进入你的 <strong>themes</strong>目录 命令行输入命令</p>
 </blockquote>
-<div class="hljs code-wrapper"><pre><code>git clone https://github.com/iissnan/hexo-theme-next.git
-</code></pre></div>
+<figure class="highlight bash"><table><tr><td class="gutter hljs"><div class="hljs code-wrapper"><pre><span class="line">1</span><br></pre></div></td><td class="code"><div class="hljs code-wrapper"><pre><code class="hljs bash">git <span class="hljs-built_in">clone</span> https://github.com/iissnan/hexo-theme-next.git<br></code></pre></div></td></tr></table></figure>
+
 <blockquote>
 <p>主题下载后需要进行以下操作才能更换<br>根目录下的 <strong>_config.yml</strong><br>修改 xxxxx为你的主题名 ps.注意有空格<br>themes: XXXXX</p>
 </blockquote>
 <h4 id="本地浏览博客"><a href="#本地浏览博客" class="headerlink" title="本地浏览博客"></a>本地浏览博客</h4><p>命令行输入命令</p>
-<figure class="highlight ebnf"><table><tr><td class="gutter hljs"><div class="hljs code-wrapper"><pre><span class="line">1</span><br><span class="line">2</span><br></pre></div></td><td class="code"><div class="hljs code-wrapper"><pre><code class="hljs ebnf"><span class="hljs-attribute">hexo g</span><br><span class="hljs-attribute">hexo s</span><br></code></pre></div></td></tr></table></figure>
+<figure class="highlight bash"><table><tr><td class="gutter hljs"><div class="hljs code-wrapper"><pre><span class="line">1</span><br><span class="line">2</span><br></pre></div></td><td class="code"><div class="hljs code-wrapper"><pre><code class="hljs bash">hexo g<br>hexo s<br></code></pre></div></td></tr></table></figure>
 
 <blockquote>
 <p>hexo g 生成<br>hexo s 启动服务预览</p>
@@ -303,12 +303,12 @@
 <p>在浏览器输入：<strong>localhost:4000</strong> 就可以进行访问<br>Ctrl+C 即可退出</p>
 </blockquote>
 <h4 id="写文章"><a href="#写文章" class="headerlink" title="写文章"></a>写文章</h4><p>根目录下命令行 输入命令</p>
-<figure class="highlight actionscript"><table><tr><td class="gutter hljs"><div class="hljs code-wrapper"><pre><span class="line">1</span><br></pre></div></td><td class="code"><div class="hljs code-wrapper"><pre><code class="hljs actionscript">hexo <span class="hljs-keyword">new</span> <span class="hljs-string">&#x27;文章名字&#x27;</span><br></code></pre></div></td></tr></table></figure>
+<figure class="highlight bash"><table><tr><td class="gutter hljs"><div class="hljs code-wrapper"><pre><span class="line">1</span><br></pre></div></td><td class="code"><div class="hljs code-wrapper"><pre><code class="hljs bash">hexo new <span class="hljs-string">&#x27;文章名字&#x27;</span><br></code></pre></div></td></tr></table></figure>
 
 <blockquote>
 <p>在source目下的 <strong>_posts</strong>目录下 会出现 <strong>.md</strong>文件以下为一般完整内容</p>
 </blockquote>
-<figure class="highlight plaintext"><table><tr><td class="gutter hljs"><div class="hljs code-wrapper"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br><span class="line">6</span><br><span class="line">7</span><br></pre></div></td><td class="code"><div class="hljs code-wrapper"><pre><code class="hljs \---">title: postName #文章页面上的显示名称，一般是中文<br>date: 2013-12-02 15:30:16 #文章生成时间，一般不改，当然也可以任意修改<br>categories: 默认分类 #分类<br>tags: [tag1,tag2,tag3] #文章标签，可空，多标签请用格式，注意:后面有个空格<br>description: 附加一段文章摘要，字数最好在140字以内，会出现在meta的description里面<br>---<br>以下文章是正文<br></code></pre></div></td></tr></table></figure>
+<figure class="highlight yaml"><table><tr><td class="gutter hljs"><div class="hljs code-wrapper"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br><span class="line">6</span><br><span class="line">7</span><br></pre></div></td><td class="code"><div class="hljs code-wrapper"><pre><code class="hljs yaml"><span class="hljs-attr">title:</span> <span class="hljs-string">postName</span> <span class="hljs-comment">#文章页面上的显示名称，一般是中文</span><br><span class="hljs-attr">date:</span> <span class="hljs-number">2013-12-02 15:30:16</span> <span class="hljs-comment">#文章生成时间，一般不改，当然也可以任意修改</span><br><span class="hljs-attr">categories:</span> <span class="hljs-string">默认分类</span> <span class="hljs-comment">#分类</span><br><span class="hljs-attr">tags:</span> [<span class="hljs-string">tag1</span>,<span class="hljs-string">tag2</span>,<span class="hljs-string">tag3</span>] <span class="hljs-comment">#文章标签，可空，多标签请用格式，注意:后面有个空格</span><br><span class="hljs-attr">description:</span> <span class="hljs-string">附加一段文章摘要，字数最好在140字以内，会出现在meta的description里面</span><br><span class="hljs-meta">---</span><br><span class="hljs-string">以下文章是正文</span><br></code></pre></div></td></tr></table></figure>
 
 
 <h4 id="上传到GitHub上"><a href="#上传到GitHub上" class="headerlink" title="上传到GitHub上"></a>上传到GitHub上</h4><blockquote>
@@ -317,11 +317,11 @@
 <blockquote>
 <p>根目录下 <strong>_config.yml</strong>文件内<br>把你的git写进去 现在写的是我的 替换一下就ok了</p>
 </blockquote>
-<figure class="highlight dts"><table><tr><td class="gutter hljs"><div class="hljs code-wrapper"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br></pre></div></td><td class="code"><div class="hljs code-wrapper"><pre><code class="hljs dts"><span class="hljs-symbol">deploy:</span><br><span class="hljs-symbol">  type:</span> git<br><span class="hljs-symbol">  repo:</span> git@github.com:MoBenw/MoBenw.github.io.git<br></code></pre></div></td></tr></table></figure>
+<figure class="highlight yaml"><table><tr><td class="gutter hljs"><div class="hljs code-wrapper"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br></pre></div></td><td class="code"><div class="hljs code-wrapper"><pre><code class="hljs yaml"><span class="hljs-attr">deploy:</span><br>  <span class="hljs-attr">type:</span> <span class="hljs-string">git</span><br>  <span class="hljs-attr">repo:</span> <span class="hljs-string">git@github.com:MoBenw/MoBenw.github.io.git</span><br></code></pre></div></td></tr></table></figure>
 
 <p>满足以上条件<br>命令行 输入命令</p>
-<div class="hljs code-wrapper"><pre><code>hexo clean &amp;&amp; hexo g &amp;&amp; hexo d
-</code></pre></div>
+<figure class="highlight bash"><table><tr><td class="gutter hljs"><div class="hljs code-wrapper"><pre><span class="line">1</span><br></pre></div></td><td class="code"><div class="hljs code-wrapper"><pre><code class="hljs bash">hexo clean &amp;&amp; hexo g &amp;&amp; hexo d<br></code></pre></div></td></tr></table></figure>
+
 <blockquote>
 <p>hexo clean 清理缓存<br>hexo g 生成<br>hexo d 部署</p>
 </blockquote>
@@ -365,7 +365,7 @@
                   <article class="post-prev col-6">
                     
                     
-                      <a href="/2018/08/07/002.Blog-to-optimize/">
+                      <a href="/2018/08/07/002/">
                         <i class="iconfont icon-arrowleft"></i>
                         <span class="hidden-mobile">博客美化记</span>
                         <span class="visible-mobile">上一篇</span>
